@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfe709bb2e1c094e9681195692251cf, type: 3}
-  m_Name: LegMachine
+  m_Name: Robot1
   m_EditorClassIdentifier: 
-  type: 3
+  type: 1
   startsOn: 1
   inventoryName: 
   inventoryIcon: {fileID: 0}
   requirements:
-  - {fileID: 11400000, guid: f2dfaade666cf1f44a57a3d705b94902, type: 2}
-  - {fileID: 11400000, guid: 5ff37a02eb569d04aa580912b5702da1, type: 2}
-  requirementsMessage: 
-  interactionMessages: []
+  - {fileID: 11400000, guid: 5010a934ddf8fe64a960852ff760e95f, type: 2}
+  requirementsMessage: Beep Boop (Missing a Leg)
+  interactionMessages:
+  - Beep Boop (Am Fixed!)

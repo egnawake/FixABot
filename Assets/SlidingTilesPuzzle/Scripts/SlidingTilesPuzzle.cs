@@ -5,7 +5,7 @@ public class SlidingTilesPuzzle : MonoBehaviour
 {
     [SerializeField] private TMP_Text[] tileObjects;
     private int[] layout;
-    private int[] solution = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+    private int[] solution = { 1, 1, 1, 2, 2, 2, 3, 3, 3 };
 
     private Interactive interactive;
 
@@ -47,6 +47,9 @@ public class SlidingTilesPuzzle : MonoBehaviour
             }
         }
 
+        Debug.Log("Win");
+
+        interactive.SetRequirementsMet();
         interactive.Interact();
     }
 
@@ -61,6 +64,7 @@ public class SlidingTilesPuzzle : MonoBehaviour
     private void Start()
     {
         interactive = GetComponent<Interactive>();
-        layout = new int[] { 1, 0, 7, 8, 4, 6, 5, 2, 3 };
+        layout = new int[] { 3, 1, 1, 1, 2, 2, 2, 3, 3 };
+        UpdateDisplay();
     }
 }

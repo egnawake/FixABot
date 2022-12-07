@@ -55,6 +55,16 @@ public class Interactive : MonoBehaviour
             UseRequirement();
     }
 
+    public void SetRequirementsMet()
+    {
+        requirementsMet = true;
+    }
+
+    public bool IsRequirementsMet()
+    {
+        return requirementsMet;
+    }
+
     public void AddDependent(Interactive dependent)
     {
         dependents.Add(dependent);
