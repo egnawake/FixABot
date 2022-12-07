@@ -2714,9 +2714,9 @@ GameObject:
   - component: {fileID: 1776845448}
   - component: {fileID: 1776845447}
   - component: {fileID: 1776845450}
-  - component: {fileID: 1776845452}
+  - component: {fileID: 1776845451}
   m_Layer: 0
-  m_Name: TestMachine
+  m_Name: LegMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2820,7 +2820,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1776845452
+--- !u!114 &1776845451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2829,11 +2829,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776845445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56f4531196e6c1c42b30259fab135d55, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c66acf955ac2bd99a3a39db665e6d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOn: 0
-  interactiveData: {fileID: 11400000, guid: cc78bf9afd510f841a303b100755410c, type: 2}
+  part: {fileID: 815106771}
+  puzzle: {fileID: 2081812430}
 --- !u!1 &1849126273
 GameObject:
   m_ObjectHideFlags: 0
