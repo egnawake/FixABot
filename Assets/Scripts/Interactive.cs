@@ -112,6 +112,7 @@ public class Interactive : MonoBehaviour
             InteractDependents();
         }
 
+        OnInteracted.Invoke();
     }
 
     private void UpdateDependents()
