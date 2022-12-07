@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dfe709bb2e1c094e9681195692251cf, type: 3}
   m_Name: WherePieceGo
   m_EditorClassIdentifier: 
-  type: 2
+  type: 3
   startsOn: 1
   inventoryName: 
   inventoryIcon: {fileID: 0}
@@ -22,4 +22,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5140c8c3fdcfac54683b5a21d508a867, type: 2}
   requirementsMessage: Requires 3 pieces to start
   interactionMessages:
-  - Peca Peca Peca
+  - Pieces inserted

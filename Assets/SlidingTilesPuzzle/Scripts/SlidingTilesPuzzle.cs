@@ -47,9 +47,7 @@ public class SlidingTilesPuzzle : MonoBehaviour
             }
         }
 
-        Debug.Log("Win");
-
-        interactive.SetRequirementsMet();
+        //interactive.SetRequirementsMet();
         interactive.Interact();
     }
 

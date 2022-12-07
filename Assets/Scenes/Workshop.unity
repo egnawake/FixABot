@@ -1904,6 +1904,7 @@ GameObject:
   - component: {fileID: 1189058901}
   - component: {fileID: 1189058902}
   - component: {fileID: 1189058903}
+  - component: {fileID: 1189058904}
   m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
@@ -1997,6 +1998,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1890184477}
   slotCount: 6
+--- !u!114 &1189058904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189058898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136b84b233f6dd479a3288f7d57a59e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1295296230
 GameObject:
   m_ObjectHideFlags: 0
