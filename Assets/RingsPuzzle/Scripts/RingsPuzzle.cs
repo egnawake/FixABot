@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RingsPuzzle : MonoBehaviour
@@ -10,13 +8,31 @@ public class RingsPuzzle : MonoBehaviour
     [SerializeField] private Interactive[] buttons;
 
     private int[] ringStates;
+    private Interactive interactive;
 
     private void Start()
     {
-        ringStates = new int [3];
+        ringStates = new int[] {8, 4, 6};
+
+        RotateRing1();
+        RotateRing2();
+        RotateRing3();
+
         ringObjects[0].OnInteracted.AddListener(RotateRing1);
         ringObjects[1].OnInteracted.AddListener(RotateRing2);
         ringObjects[2].OnInteracted.AddListener(RotateRing3);
+
+        interactive = GetComponent<Interactive>();
+    }
+
+    private bool CheckComplete()
+    {
+        foreach (int state in ringStates)
+        {
+            if (state != 0) return false;
+        }
+
+        return true;
     }
 
     private void RotateRing(int index)
@@ -26,19 +42,24 @@ public class RingsPuzzle : MonoBehaviour
         Vector3 rotation = ringObjects[index].transform.localEulerAngles;
         rotation.y = ringStates[index] * (360 / STEPS);
         ringObjects[index].transform.localEulerAngles = rotation;
+
+        if (CheckComplete())
+        {
+            interactive.Interact();
+        }
     }
 
-    private void RotateRing1 ()
+    private void RotateRing1()
     {
         RotateRing(0);
     }
 
-    private void RotateRing2 ()
+    private void RotateRing2()
     {
         RotateRing(1);
     }
 
-    private void RotateRing3 ()
+    private void RotateRing3()
     {
         RotateRing(2);
     }
