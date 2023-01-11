@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8002011302191141638
 Transform:
   m_ObjectHideFlags: 0
@@ -107,6 +107,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8002011302775411050}
   - component: {fileID: -305520161806028065}
+  - component: {fileID: 6246569020906183241}
+  - component: {fileID: -8200115159521152191}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -157,6 +159,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6246569020906183241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002011302775411053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42348003, y: 0.93490624, z: 0.3174563}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8200115159521152191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002011302775411053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f4531196e6c1c42b30259fab135d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
+  interactiveData: {fileID: 0}
 --- !u!1 &8002011302934758669
 GameObject:
   m_ObjectHideFlags: 0

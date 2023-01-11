@@ -2,31 +2,34 @@ using UnityEngine;
 
 public class RobotSpawner : MonoBehaviour
 {
-    // [SerializeField] private Robot[] robots;
-    // [SerializeField] private Interactive callButton;
+    [SerializeField] private Interactive[] robots;
+    [SerializeField] private Interactive callButton;
 
-    // private bool readyToSpawn = true;
-    // private int nextRobot = 0;
+    private bool readyToSpawn = true;
+    private int currentRobot = 0;
 
-    // public void RobotFixed()
-    // {
-    //     readyToSpawn = true;
-    // }
+    public void RobotFixed()
+    {
+        robots[currentRobot].GetComponent<Animator>().SetTrigger("Exit");
+        currentRobot++;
+        readyToSpawn = true;
+    }
 
-    // private void Start()
-    // {
-    //     callButton.OnInteracted.AddListener(SpawnRobot);
-    // }
+    private void Start()
+    {
+        callButton.OnInteracted.AddListener(SendInRobot);
+    }
 
-    // private void SpawnRobot()
-    // {
-    //     if (!readyToSpawn)
-    //         return;
+    private void SendInRobot()
+    {
+        Debug.Log($"{readyToSpawn}");
+        if (!readyToSpawn)
+            return;
 
-    //     Robot robot = robots[nextRobot++];
-    //     robot.GetComponent<Animator>().SetTrigger("Enter");
-    //     robot.OnFixed.AddListener(RobotFixed);
+        Interactive robot = robots[currentRobot];
+        robot.OnInteracted.AddListener(RobotFixed);
+        robot.GetComponent<Animator>().SetTrigger("Enter");
 
-    //     readyToSpawn = false;
-    // }
+        readyToSpawn = false;
+    }
 }

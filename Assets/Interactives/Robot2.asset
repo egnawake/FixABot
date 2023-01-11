@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfe709bb2e1c094e9681195692251cf, type: 3}
-  m_Name: MissingPart2
+  m_Name: Robot2
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   startsOn: 1
-  inventoryName: New Arm
+  inventoryName: 
   inventoryIcon: {fileID: 0}
-  requirements: []
+  requirements:
+  - {fileID: 11400000, guid: 2023a256a46afe522be9cac9e4485fd3, type: 2}
   requirementsMessage: 
-  interactionMessages:
-  - A new arm
+  interactionMessages: []
