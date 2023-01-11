@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfe709bb2e1c094e9681195692251cf, type: 3}
-  m_Name: MissingPartDispenser2
+  m_Name: LegDispenser
   m_EditorClassIdentifier: 
   type: 3
   startsOn: 1
   inventoryName: 
   inventoryIcon: {fileID: 0}
   requirements:
-  - {fileID: 11400000, guid: 41c27709c7fbe39f382ab7199ebac514, type: 2}
+  - {fileID: 11400000, guid: f2dfaade666cf1f44a57a3d705b94902, type: 2}
   requirementsMessage: 
   interactionMessages: []
