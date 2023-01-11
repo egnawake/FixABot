@@ -22,8 +22,10 @@ public class RobotSpawner : MonoBehaviour
 
     private void SendInRobot()
     {
-        Debug.Log($"{readyToSpawn}");
         if (!readyToSpawn)
+            return;
+
+        if (currentRobot >= robots.Length)
             return;
 
         Interactive robot = robots[currentRobot];
