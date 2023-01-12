@@ -20,4 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5010a934ddf8fe64a960852ff760e95f, type: 2}
   requirementsMessage: Beep Boop (Missing a Leg)
   interactionMessages:
-  - Beep Boop (Am Fixed!)
+  - Beep Boop (Click me and button for new robot)

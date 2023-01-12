@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   startsOn: 1
   inventoryName: A new leg
-  inventoryIcon: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: f8c399869e78e184285b64165d83600a, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages:

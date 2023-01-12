@@ -20,6 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0abeee559454d5042a47342533cba288, type: 2}
   - {fileID: 11400000, guid: 02815f68ca721ba42950696cf78f7bde, type: 2}
   - {fileID: 11400000, guid: 5140c8c3fdcfac54683b5a21d508a867, type: 2}
-  requirementsMessage: Requires 3 pieces to start
+  requirementsMessage: Requires Feet, Leg and Hammer
   interactionMessages:
-  - Pieces inserted
+  - Complete the puzzle to receive part

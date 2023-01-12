@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dfe709bb2e1c094e9681195692251cf, type: 3}
-  m_Name: Arm
+  m_Name: HammerPiece
   m_EditorClassIdentifier: 
   type: 0
   startsOn: 1
-  inventoryName: A new arm
-  inventoryIcon: {fileID: 21300000, guid: 42e4a5480cfe7294aa03705079f9c7ce, type: 3}
+  inventoryName: Hammer
+  inventoryIcon: {fileID: 21300000, guid: 07a0ed849b0d33a4fa776a7b76a76345, type: 3}
   requirements: []
-  requirementsMessage: 
+  requirementsMessage: Hammer Piece
   interactionMessages:
-  - A new arm
+  - Insert piece

@@ -18,5 +18,6 @@ MonoBehaviour:
   inventoryIcon: {fileID: 0}
   requirements:
   - {fileID: 11400000, guid: 2023a256a46afe522be9cac9e4485fd3, type: 2}
-  requirementsMessage: 
-  interactionMessages: []
+  requirementsMessage: Beep Boop (Missing an Arm)
+  interactionMessages:
+  - Beep boop (Am fixed)
